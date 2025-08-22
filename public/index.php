@@ -7,43 +7,29 @@
     <title>DevAcademy</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!--  Animaciones aos -->
+    <!--  Animations aos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <!--  CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">DevAcademy 🚀</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+    <!-- Header -->
+    <?php include '../templates/header.php'; ?>
 
+<!-- Hero Section -->
     <section id="home" class="hero d-flex align-items-center text-center">
         <div class="container" data-aos="fade-up">
             <h1 class="display-3 fw-bold mb-3">Bienvenido a <span class="text-warning">DevAcademy</span></h1>
             <p class="lead mb-4">El viaje para convertirte en Dev comienza aquí 🚀</p>
-            <a href="javascript:void(0)" class="btn btn-warning btn-lg rounded-pill shadow">Explorar Contenido</a>
+            <a href="../public/courses.php" class="btn btn-warning btn-lg rounded-pill shadow">Explorar Contenido</a>
         </div>
     </section>
 
-   
+   <!-- Features Section -->
     <section id="features" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="zoom-in">

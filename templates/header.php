@@ -1,30 +1,17 @@
-<!-- templates/header.php -->
-<?php
-
-if (!isset($titulo)) {
-    $titulo = "Página educativa";
-}
-?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $titulo; ?></title>
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-    <header>
-        <div class="logo">
-           
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../public/index.php">DevAcademy 🚀</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../public/index.php">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../public/courses.php">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Recursos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
