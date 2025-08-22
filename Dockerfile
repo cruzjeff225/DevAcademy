@@ -9,5 +9,4 @@ WORKDIR /app/public
 EXPOSE 10000
 
 # Comando para iniciar el servidor PHP
-CMD ["php", "-S", "0.0.0.0:10000"]
-
+CMD ["php", "-S", "0.0.0.0:10000", "-t", "/app/public"]
