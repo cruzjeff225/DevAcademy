@@ -12,7 +12,7 @@
     <!--  Animations aos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <!--  CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <div class="container" data-aos="fade-up">
             <h1 class="display-3 fw-bold mb-3">Bienvenido a <span class="text-warning">DevAcademy</span></h1>
             <p class="lead mb-4">El viaje para convertirte en Dev comienza aquí 🚀</p>
-            <a href="../public/courses.php" class="btn btn-warning btn-lg rounded-pill shadow">Explorar Contenido</a>
+            <a href="/courses.php" class="btn btn-warning btn-lg rounded-pill shadow">Explorar Contenido</a>
         </div>
     </section>
 
