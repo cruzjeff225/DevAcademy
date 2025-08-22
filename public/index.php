@@ -1,72 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevAcademy</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--  Animaciones aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!--  CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <!--Hero Section -->
-    <section id="home" class="hero">
-        <div class="container text-center">
-            <h1 class="display-4">Bienvenido a DevAcademy</h1>
-            <p class="lead">El viaje para convertirte en Dev comienza aquí!</p>
-            <a href="courses.php" class="btn btn-primary btn-lg">Explorar Contenido</a>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DevAcademy 🚀</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero d-flex align-items-center text-center">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-3">Bienvenido a <span class="text-warning">DevAcademy</span></h1>
+            <p class="lead mb-4">El viaje para convertirte en Dev comienza aquí 🚀</p>
+            <a href="javascript:void(0)" class="btn btn-warning btn-lg rounded-pill shadow">Explorar Contenido</a>
         </div>
     </section>
-    <!-- Featured Courses Section -->
-    <div class="bg-light">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h1 class="section-heading display-4 mb-3">¿Por qué estudiar con DevAcademy?</h1>
-                <p class="text-muted lead">Aquí encontrarás recursos pensados para que avances a tu propio ritmo.</p>
+
+   
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="display-5 fw-bold">¿Por qué elegir <span class="text-primary">DevAcademy</span>?</h2>
+                <p class="text-muted">Recursos pensados para que avances a tu propio ritmo</p>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card feature-card h-100 p-4">
-                        <div class="icon-wrapper bg-soft-primary">
-                            <i class="fas fa-graduation-cap text-primary"></i>
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <div class="icon-wrapper bg-light text-primary mx-auto mb-3">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
                         </div>
-                        <h3 class="card-title">100% gratis</h3>
-                        <p class="card-text text-muted">Accede a todos los contenidos sin costo. Aprende sin barreras económicas.
-                        </p>
+                        <h4>100% Gratis</h4>
+                        <p class="text-muted">Accede a todo el contenido sin costo. Aprende sin barreras económicas.</p>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card feature-card h-100 p-4">
-                        <div class="icon-wrapper bg-soft-success">
-                            <i class="fa-solid fa-code text-success"></i>
-                            </svg>
+                <div class="col-md-4" data-aos="flip-up">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <div class="icon-wrapper bg-light text-success mx-auto mb-3">
+                            <i class="fa-solid fa-code fa-2x"></i>
                         </div>
-                        <h3 class="card-title">Aprendizaje práctico</h3>
-                        <p class="card-text text-muted">Ejemplos claros con código real para que pongas en práctica lo aprendido.</p>
+                        <h4>Aprendizaje Práctico</h4>
+                        <p class="text-muted">Ejemplos claros con código real para aplicar lo aprendido.</p>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card feature-card h-100 p-4">
-                        <div class="icon-wrapper bg-soft-warning">
-                            <i class="fa-solid fa-rocket text-warning"></i>
+                <div class="col-md-4" data-aos="flip-right">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <div class="icon-wrapper bg-light text-warning mx-auto mb-3">
+                            <i class="fa-solid fa-rocket fa-2x"></i>
                         </div>
-                        <h3 class="card-title">Enfoque sencillo</h3>
-                        <p class="card-text text-muted">Explicaciones fáciles de entender para que avances paso a paso sin complicaciones.</p>
+                        <h4>Enfoque Sencillo</h4>
+                        <p class="text-muted">Explicaciones fáciles para que avances paso a paso sin complicaciones.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <?php include '../templates/footer.php'; ?>
-</body>
+    </section>
 
+    <!-- footer -->
+    <?php include '../templates/footer.php'; ?>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
 </html>
