@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <?php include '../templates/header.php'; ?>
+    
     <?php
     // Array with topics and their information
     $topics = [
@@ -134,50 +137,73 @@
     }
     ?>
 
-    <!-- Header -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <h1 class="display-4"><?php echo $currentTopic['title']; ?></h1>
-            <p class="lead text-muted"><?php echo $currentTopic['description']; ?></p>
-        </div>
-    </section>
-
     <!-- Content Section -->
-    <section class="py-5">
+    <section class="py-5" style="margin-top: 80px;">
         <div class="container">
-            <?php if (!empty($currentTopic['example']['image'])): ?>
-                <h3 class="mt-4">💡 Ejemplo de uso:</h3>
-                <div class="text-center mb-4">
-                    <img src="<?php echo $currentTopic['example']['image']; ?>" alt="Ejemplo IF" class="img-fluid rounded" style="max-width: 400px;">
-                </div>
-            <?php endif; ?>
-
-            <h3 class="mt-4">🧠 Explicación paso a paso:</h3>
-            <ul class="list-group mb-4">
-                <?php foreach ($currentTopic['step_by_step'] as $step): ?>
-                    <li class="list-group-item"><?php echo $step; ?></li>
-                <?php endforeach; ?>
-            </ul>
-
-            <?php if (!empty($currentTopic['additional_info'])): ?>
-                <h3 class="mt-4">➕ Información adicional:</h3>
-                <p class="text-muted"><?php echo $currentTopic['additional_info']; ?></p>
-                <?php if (!empty($currentTopic['images']['additional'])): ?>
-                    <div class="text-center mb-4">
-                        <img src="<?php echo $currentTopic['images']['additional']; ?>" alt="Ejemplo Else y Elseif" class="img-fluid rounded" style="max-width: 400px;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Título y descripción -->
+                    <div class="text-center mb-5">
+                        <h1 class="display-4 fw-bold"><?php echo $currentTopic['title']; ?></h1>
+                        <p class="lead text-muted"><?php echo $currentTopic['description']; ?></p>
                     </div>
-                <?php endif; ?>
-            <?php endif; ?>
 
-            <?php if (!empty($currentTopic['exercise'])): ?>
-                <h3 class="mt-4">🏋️‍♂️ Ejercicio final:</h3>
-                <p class="text-muted"><?php echo $currentTopic['exercise']; ?></p>
-            <?php endif; ?>
+                    <!-- Ejemplo de uso -->
+                    <?php if (!empty($currentTopic['example']['image'])): ?>
+                        <div class="mb-5">
+                            <h3 class="mb-3 text-warning"><i class="fa-solid fa-lightbulb"></i> Ejemplo de uso:</h3>
+                            <img src="<?php echo $currentTopic['example']['image']; ?>" alt="Ejemplo IF" class="img-fluid rounded shadow-lg" style="max-width: 100%;">
+                        </div>
+                    <?php endif; ?>
+
+                    <!-- Explicación paso a paso -->
+                    <div class="mb-5">
+                        <h3 class="mb-3 text-primary"><i class="fa-solid fa-brain"></i> Explicación paso a paso:</h3>
+                        <ul class="list-group">
+                            <?php foreach ($currentTopic['step_by_step'] as $step): ?>
+                                <li class="list-group-item"><?php echo $step; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                    <!-- Información adicional -->
+                    <?php if (!empty($currentTopic['additional_info'])): ?>
+                        <div class="mb-5">
+                            <h3 class="mb-3 text-success"><i class="fa-solid fa-plus"></i> Información adicional:</h3>
+                            <p class="text-muted"><?php echo $currentTopic['additional_info']; ?></p>
+                            <?php if (!empty($currentTopic['images']['additional'])): ?>
+                                <div class="text-center">
+                                    <img src="<?php echo $currentTopic['images']['additional']; ?>" alt="Ejemplo Else y Elseif" class="img-fluid rounded shadow-lg" style="max-width: 100%;">
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <!-- Ejercicio final -->
+                    <?php if (!empty($currentTopic['exercise'])): ?>
+                        <div class="mb-5">
+                            <h3 class="mb-3 text-danger"><i class="fa-solid fa-dumbbell"></i> Ejercicio final:</h3>
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <p class="text-muted"><?php echo $currentTopic['exercise']; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <?php include '../templates/footer.php'; ?>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+    </script>
 </body>
 
 </html>

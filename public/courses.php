@@ -14,8 +14,10 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <?php include '../templates/header.php'; ?>
     <!-- Topics Section -->
-    <section id="topics" class="py-5">
+    <section id="topics" class="py-5" style="margin-top: 80px;">
         <div class="container">
             <div class="text-center mb-5">
                 <h1 class="section-heading display-4 mb-3">Temas de PHP</h1>
@@ -26,7 +28,7 @@
                 <div class="col-md-4">
                     <div class="card feature-card h-100 p-4">
                         <div class="icon-wrapper bg-soft-primary">
-                            <i class="fa-solid fa-code text-primary"></i>
+                            <i class="fa-solid fa-check text-primary"></i>
                         </div>
                         <h3 class="card-title">Condicional If</h3>
                         <p class="card-text text-muted">Aprende a ejecutar código solo si se cumple una condición. ¡Controla el flujo en PHP con lógica pura!</p>
@@ -39,7 +41,7 @@
                 <div class="col-md-4">
                     <div class="card feature-card h-100 p-4">
                         <div class="icon-wrapper bg-soft-success">
-                            <i class="fa-solid fa-code-branch text-primary"></i>
+                            <i class="fa-solid fa-toggle-on text-success"></i>
                         </div>
                         <h3 class="card-title">Condicional Switch</h3>
                         <p class="card-text text-muted">Elige entre múltiples caminos de forma clara y ordenada. ¡Haz decisiones eficientes en PHP!</p>
@@ -51,7 +53,7 @@
                 <div class="col-md-4">
                     <div class="card feature-card h-100 p-4">
                         <div class="icon-wrapper bg-soft-warning">
-                            <i class="fa-solid fa-layer-group text-primary"></i>
+                            <i class="fa-solid fa-repeat text-warning"></i>
                         </div>
                         <h3 class="card-title">Condicional While</h3>
                         <p class="card-text text-muted">Repite acciones mientras una condición sea verdadera. ¡Automatiza procesos con PHP!</p>
@@ -63,7 +65,7 @@
                 <div class="col-md-4">
                     <div class="card feature-card h-100 p-4">
                         <div class="icon-wrapper bg-soft-primary">
-                            <i class="fa-solid fa-layer-group text-warning"></i>
+                            <i class="fa-solid fa-arrow-right-arrow-left text-primary"></i>
                         </div>
                         <h3 class="card-title">Condicional For</h3>
                         <p class="card-text text-muted">Repite tareas con control total desde el inicio hasta el fin. ¡Haz bucles eficientes en PHP!</p>
@@ -75,7 +77,7 @@
                 <div class="col-md-4">
                     <div class="card feature-card h-100 p-4">
                         <div class="icon-wrapper bg-soft-success">
-                            <i class="fa-solid fa-layer-group text-primary"></i>
+                            <i class="fa-solid fa-list text-success"></i>
                         </div>
                         <h3 class="card-title">Condicional Foreach</h3>
                         <p class="card-text text-muted">Accede fácilmente a cada elemento de un array. ¡Domina colecciones de datos en PHP!</p>
