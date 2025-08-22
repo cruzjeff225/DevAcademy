@@ -25,7 +25,7 @@
             'title' => 'IF en PHP — Controla el flujo de tu código',
             'description' => 'La estructura if en PHP permite tomar decisiones dentro de tu programa. Es una de las estructuras más básicas pero poderosas que existen. Con if, puedes ejecutar un bloque de código solo cuando se cumpla una determinada condición lógica.',
             'example' => [
-            'image' => '../assets/img/if.png',
+            'image' => '/assets/img/if.png',
         ],
             'step_by_step' => [
                 'Se define una variable $edad con el valor 20.',
@@ -36,7 +36,7 @@
             'additional_info' => 'También puedes usar else y else if para manejar múltiples condiciones.',
             'exercise' => 'Crea un programa en PHP que reciba un número y determine si es positivo, negativo o cero. Usa if, else if y else para mostrar un mensaje según el caso.',
             'images' => [
-                'additional' => '../assets/img/elseif.png',
+                'additional' => '/assets/img/elseif.png',
             ],
         ],
         // Information for condicional Switch
@@ -44,7 +44,7 @@
             'title' => 'SWITCH en PHP — Elige con múltiples opciones',
             'description' => 'Switch es una alternativa a usar múltiples if y else if cuando se trata de comparar una misma variable con diferentes valores. Esto hace que tu código sea más legible y ordenado.',
             'example' => [
-            'image' => '../assets/img/switch.png',
+            'image' => '/assets/img/switch.png',
         ],
             'step_by_step' => [
                 'PHP evalúa el valor de la variable $dia.',
@@ -56,7 +56,7 @@
             'additional_info' => '',
             'exercise' => 'Escribe un programa en PHP que reciba un número del 1 al 7 y devuelva el nombre del día correspondiente. Usa switch para mostrar los mensajes como "Lunes", "Martes", etc.',
             'images' => [
-                'additional' => '../assets/images/else-elseif-example.png',
+                'additional' => '/assets/images/else-elseif-example.png',
             ],
         ],
         // Information for bucle While
@@ -64,7 +64,7 @@
             'title' => 'WHILE en PHP — Repite con lógica',
             'description' => 'El bucle while repite un bloque de código mientras una condición sea verdadera. Es útil cuando no sabemos cuántas veces exactamente se ejecutará el código.',
             'example' => [
-            'image' => '../assets/img/while.png',
+            'image' => '/assets/img/while.png',
         ],
             'step_by_step' => [
                 '$contador = 1: variable inicial.',
@@ -84,7 +84,7 @@
             'title' => 'FOR en PHP — Control total sobre repeticiones',
             'description' => 'El bucle for es ideal cuando sabes cuántas veces necesitas ejecutar un bloque de código. Combina inicialización, condición y actualización en una sola línea.',
             'example' => [
-            'image' => '../assets/img/for.png',
+            'image' => '/assets/img/for.png',
         ],
             'step_by_step' => [
                 'Inicio: $i = 1',
@@ -95,7 +95,7 @@
             'additional_info' => '',
             'exercise' => 'Crea un programa en PHP que imprima todos los números pares del 1 al 20 usando un bucle for. Muestra cada número en una nueva línea.',
             'images' => [
-                'additional' => '../assets/images/else-elseif-example.png',
+                'additional' => '/assets/images/else-elseif-example.png',
             ],
         ],
         // Information for Foreach
@@ -103,7 +103,7 @@
             'title' => 'FOREACH en PHP — Recorre arrays fácilmente',
             'description' => 'Foreach es la forma más sencilla de recorrer arrays en PHP. A diferencia de for, no necesitas preocuparte por los índices ni por el tamaño del array.',
             'example' => [
-            'image' => '../assets/img/foreach.png',
+            'image' => '/assets/img/foreach.png',
         ],
             'step_by_step' => [
                 'Se declara un array $colores.',
@@ -113,7 +113,7 @@
             'additional_info' => 'También puedes acceder a clave y valor:',
             'exercise' => 'Crea un array con 5 nombres de personas. Usa foreach para mostrar un saludo personalizado para cada una, por ejemplo: "¡Hola, Ana!".',
             'images' => [
-                'additional' => '../assets/img/foreach-value-key.png',
+                'additional' => '/assets/img/foreach-value-key.png',
             ],
         ],
     ];
